@@ -1,0 +1,36 @@
+.missed-post {
+  padding: 12px;
+  border-top: 3px solid $link-color;
+
+  &__content {
+    overflow: hidden;
+  }
+
+  &__header {
+    margin-bottom: 20px;
+  }
+
+  &__subject {
+    margin: 0 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: $text-color;
+  }
+
+  &__subject-link {
+    text-decoration: none;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    color: $text-color;
+    }
+
+  &__text {
+    line-height: 1.5;
+    font-size: 14px;
+    color: $secondary-color;
+  }
+}
+
+

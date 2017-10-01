@@ -1,0 +1,19 @@
+.post {
+  margin-bottom: 10px;
+  border: 1px solid #DEE6E9;
+  border-radius: 6px;
+  background: $white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .06);
+
+  &__tags {
+    margin: 15px 0 0;
+
+    .button {
+      margin: 0 0 5px;
+    }
+  }
+
+  &__buttons {
+    margin: 25px 0 0;
+  }
+}

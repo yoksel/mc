@@ -1,0 +1,19 @@
+.comment {
+  padding: 12px;
+  background: $light-gray;
+  border-color: #E9E9E9
+
+  &__content {
+    overflow: hidden;
+  }
+
+  &__header {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    color: $black;
+  }
+}
+
+

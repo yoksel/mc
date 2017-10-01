@@ -1,0 +1,30 @@
+
+.main {
+
+}
+
+.main__title {
+  margin: 0 0 15px;
+  font-size: 16px;
+  font-weight: bold;
+  }
+
+.main__intro {
+  font-size: 14px;
+  color: $black;
+}
+
+.section__title {
+  margin: 20px 0 10px;
+  padding-top: 10px;
+  border-top: 1px solid #DEE6E9;
+  font-size: 20px;
+}
+
+.section__title-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  vertical-align: -1px;
+}

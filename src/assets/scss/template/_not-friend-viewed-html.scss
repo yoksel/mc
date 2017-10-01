@@ -1,0 +1,79 @@
+// Not friend viewed html template styles
+.articles {
+  // background: $light-gray !important;
+
+  &__wrap {
+    background: $light-gray !important;
+  }
+
+  &__item {
+    margin-bottom: 8px;
+    padding: 12px;
+    border: 1px solid #e9e9e9;
+    border-top: 3px solid #00a2d9;
+    border-radius: 8px;
+    background: #ffffff;
+  }
+
+  &__userpick {
+    width: initial !important;
+
+    & A {
+      display:inline-block;
+      border-radius:6px;
+      display:inline-block;
+      overflow:hidden;
+    }
+
+    & IMG {
+      display:block;
+      width:auto;
+      margin-right: 10px;
+
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        margin-right: 10px;
+        width: 36px !important;
+        height: 36px !important;
+      }
+    }
+  }
+
+  &__info {
+    width:75% !important;
+  }
+
+  &__userpanel {
+    margin-bottom: 0;
+  }
+
+  &__userhead {
+    display: inline;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      width: 17px !important;
+      height: 17px !important;
+    }
+  }
+
+  &__username {
+    font-weight: bold;
+    vertical-align: 3px;
+  }
+
+  &__time {
+    color: $dark-gray;
+  }
+
+  &__body IMG{
+    margin-bottom: 8px;
+  }
+
+  &__subject {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    font-weight: bold;
+  }
+
+  &__text {
+    color: $dark-gray;
+  }
+}

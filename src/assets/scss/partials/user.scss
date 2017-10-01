@@ -1,0 +1,36 @@
+.user {
+
+  TH {
+    padding: 0 !important;
+  }
+
+  &__pic {
+    display: inline-block;
+    max-width: 32px;
+    max-width: 32px;
+    margin-right: 10px;
+    border-radius: 4px;
+    vertical-align: middle;
+  }
+
+  &__content {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__link {
+    font-weight: bold;
+    vertical-align: middle;
+    color: $primary-color;
+  }
+
+  &__action-datetime {
+    white-space: nowrap;
+    color: #adadad;
+  }
+
+  &--narrow &__action-datetime {
+    display: block;
+  }
+
+}

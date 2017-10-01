@@ -1,0 +1,30 @@
+.button {
+  display: inline-block;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #DEE6E9;
+  border-radius: 4px;
+  line-height: 1;
+  text-align: center;
+  color: $text-color !important;
+
+  &--has-image {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  &--blue {
+    min-width: 80px;
+    background: #00A3D9;
+    border: 0;
+    color: $white !important;
+  }
+
+  IMG {
+    display: inline-block;
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+  }
+}
