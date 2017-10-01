@@ -1,6 +1,6 @@
-<!-- journal-post -->
-<div class="post journal-post">
-    <div class="journal-post__header">
+<!-- post -->
+<div class="post">
+    <div class="post__header">
         <!-- user -->
         {{>
             user
@@ -11,10 +11,10 @@
         }}
     </div>
 
-    <div class="journal-post__content">
-        <h4 class="journal-post__subject"><a href="{{{url}}}" class="journal-post__subject-link">{{{subject}}}</a></h4>
+    <div class="post__content">
+        <h4 class="post__subject"><a href="{{{url}}}" class="post__subject-link">{{{subject}}}</a></h4>
 
-        <p class="journal-post__text">{{{text}}}</p>
+        <p class="post__text">{{{text}}}</p>
 
         <p class="post__tags">
             <a class="post__button button" href="{{{tag_url}}}">{{{tag_name}}}</a>

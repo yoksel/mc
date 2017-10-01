@@ -1,9 +1,79 @@
 .post {
   margin-bottom: 10px;
+  padding: 12px;
   border: 1px solid #DEE6E9;
   border-radius: 6px;
   background: $white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .06);
+
+  &--digest {
+    padding: 0;
+  }
+
+  &--missed {
+    border-top: 3px solid $link-color;
+  }
+
+  &__header {
+    margin-bottom: 20px;
+  }
+    &--digest &__header {
+      margin-bottom: 0;
+      padding: 12px;
+      border-bottom: 1px solid #DEE6E9;
+    }
+
+  &__content {
+    overflow: hidden;
+  }
+    &--digest &__content {
+      padding: 12px;
+    }
+
+  &__subject {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: $text-color;
+  }
+
+  &--digest &__subject {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+
+  &--missed &__subject {
+    font-size: 14px;
+  }
+
+  &__subject-link {
+    text-decoration: none;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    color: inherit;
+    }
+
+  &__image-holder {
+    float: right;
+    width: 72px;
+    height: 72px;
+    margin: 0 0 0 12px;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  &__text {
+    line-height: 1.5;
+    font-size: 14px;
+    color: $text-color;
+  }
+
+  &--missed &__text  {
+    color: $light-text-color;
+  }
 
   &__tags {
     margin: 15px 0 0;

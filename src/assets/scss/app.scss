@@ -6,11 +6,9 @@
 
 @import 'lj';
 @import 'partials/button';
-@import 'partials/post';
 @import 'partials/user';
 @import 'partials/image-holder';
 
-@import 'partials/digest-post';
-@import 'partials/journal-post';
-@import 'partials/missed-post.scss';
-@import 'partials/comment.scss';
+@import 'partials/post';
+
+@import 'partials/message.scss';

@@ -2,6 +2,7 @@
 
   TH {
     padding: 0 !important;
+    vertical-align: middle;
   }
 
   &__pic {
@@ -25,6 +26,7 @@
   }
 
   &__action-datetime {
+    vertical-align: middle;
     white-space: nowrap;
     color: #adadad;
   }

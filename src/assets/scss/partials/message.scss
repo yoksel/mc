@@ -1,0 +1,57 @@
+.message {
+  padding: 12px;
+  background: $light-gray;
+  border-color: #E9E9E9;
+
+  &--support {
+    padding: 0;
+  }
+
+  &__content {
+    overflow: hidden;
+  }
+
+  &__header {
+    margin-bottom: 20px;
+  }
+    &--support &__header {
+      padding: 12px 12px 0;
+    }
+
+  &--support &__content {
+    padding: 0 12px 12px;
+  }
+
+  &--support &__footer {
+    padding: 12px 12px 12px;
+    border-top: 1px solid #DEE6E9;
+  }
+
+  &__subject {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  &__text {
+    color: $black;
+  }
+
+  &__categories {
+    margin: 0;
+  }
+
+  &__category-name,
+  &__category-val {
+    display: inline-block;
+  }
+
+  &__category-name {
+    font-weight: bold;
+  }
+
+  &__category-val {
+    margin-right: 20px;
+  }
+}
+
+

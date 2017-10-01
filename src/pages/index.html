@@ -23,20 +23,10 @@ subject: Test page
       content="TMPL_VAR intro"
     }}
 
-    <h2 class="page__component-name">digest-post</h2>
-    <!-- digest-post -->
+    <h2 class="page__component-name">post</h2>
+    <!-- post -->
     {{>
-      digest-post
-      header="TMPL_VAR header"
-      subject="TMPL_VAR subject"
-      url="TMPL_VAR url"
-      image="https://img-fotki.yandex.ru/get/6616/5091629.79/0_6f337_1e9ac3a2_S"
-    }}
-
-    <h2 class="page__component-name">journal-post</h2>
-    <!-- journal-post -->
-    {{>
-      journal-post
+      post
       user_pic="https://img-fotki.yandex.ru/get/366459/5091629.a5/0_93a5a_b49d3852_S"
       user_link="TMPL_VAR user_link"
       user_name="TMPL_VAR user_name"
@@ -48,6 +38,16 @@ subject: Test page
       tag_name="TMPL_VAR tag_name"
       action_approve="Одобрить"
       action_reject="Отклонить"
+    }}
+
+    <h2 class="page__component-name">digest-post</h2>
+    <!-- digest-post -->
+    {{>
+      digest-post
+      header="TMPL_VAR header"
+      subject="TMPL_VAR subject"
+      url="TMPL_VAR url"
+      image="https://img-fotki.yandex.ru/get/6616/5091629.79/0_6f337_1e9ac3a2_S"
     }}
 
     <h2 class="page__component-name">missed-post</h2>
@@ -63,10 +63,23 @@ subject: Test page
       image="https://img-fotki.yandex.ru/get/6616/5091629.79/0_6f337_1e9ac3a2_S"
     }}
 
-    <h2 class="page__component-name">comment</h2>
-    <!-- comment -->
+    <h2 class="page__component-name">message</h2>
+    <!-- message -->
     {{>
-      comment
+      message
+      user_pic="https://img-fotki.yandex.ru/get/366459/5091629.a5/0_93a5a_b49d3852_S"
+      user_link="TMPL_VAR user_link"
+      user_name="TMPL_VAR user_name"
+      subject="TMPL_VAR subject"
+      text="TMPL_VAR text"
+      url="TMPL_VAR url"
+      image="https://img-fotki.yandex.ru/get/6616/5091629.79/0_6f337_1e9ac3a2_S"
+    }}
+
+    <h2 class="page__component-name">support-message</h2>
+    <!-- support-message -->
+    {{>
+      support-message
       user_pic="https://img-fotki.yandex.ru/get/366459/5091629.a5/0_93a5a_b49d3852_S"
       user_link="TMPL_VAR user_link"
       user_name="TMPL_VAR user_name"
@@ -92,6 +105,8 @@ subject: Test page
             class="section__title-icon"
             >Лайки-балалайки
         </h3>
+
+        <p>Content goes here</p>
     </section>
 
   </main>
