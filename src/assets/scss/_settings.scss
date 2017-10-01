@@ -16,7 +16,16 @@
 // 1. Global
 // ---------
 
+$black: #333333;
+$white: #ffffff;
+$primary-color: #00a2d9;
 $secondary-color: #777777;
+$light-gray: #f8f8f8;
+
+$link-color: $primary-color;
+$light-text-color: $secondary-color;
+$text-color: #333333;
+
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
@@ -24,12 +33,6 @@ $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $pre-color: #ff6908;
 
-$black: #333333;
-$white: #ffffff;
-$primary-color: #00a2d9;
-$light-gray: #f8f8f8;
-$link-color: #00a2d9;
-$text-color: #333333;
 
 $global-width: 480px;
 $global-width-small: 95%;
