@@ -3,13 +3,6 @@
   background: $light-gray;
   border-color: #E9E9E9;
 
-  &--support {
-    padding: 0;
-  }
-
-  &__content {
-    overflow: hidden;
-  }
 
   &__header {
     margin-bottom: 20px;
@@ -45,13 +38,7 @@
     display: inline-block;
   }
 
-  &__category-name {
-    font-weight: bold;
-  }
 
-  &__category-val {
-    margin-right: 20px;
-  }
 }
 
 

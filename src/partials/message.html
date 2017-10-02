@@ -1,18 +1,23 @@
 <!-- message -->
-<div class="post message">
-    <div class="message__header">
-        <!-- user -->
-        {{>
-            user
-            user_pic="https://img-fotki.yandex.ru/get/366459/5091629.a5/0_93a5a_b49d3852_S"
-            user_link="TMPL_VAR user_link"
-            user_name="TMPL_VAR user_name"
-            user_datetime="&bull; 12 сен 2016, 08:22"
-        }}
-    </div>
+<container class="post post--message">
+    <row class="post__header">
+        <columns >
+            <!-- user -->
+            {{>
+                user
+                user_pic="https://img-fotki.yandex.ru/get/366459/5091629.a5/0_93a5a_b49d3852_S"
+                user_link="TMPL_VAR user_link"
+                user_name="TMPL_VAR user_name"
+                user_datetime="&bull; 12 сен 2016, 08:22"
+            }}
+        </columns>
+    </row>
+    <row class="post__content">
+        <columns>
+            <h4 class="post__subject"><a href="{{{url}}}" class="post__subject-link">{{{subject}}}</a></h4>
 
-    <div class="message__content">
-        <p class="message__text">{{{text}}}</p>
-    </div>
-  </div>
-  <!-- // digest-post -->
+            <p class="post__text">{{{text}}}</p>
+        </columns>
+    </row>
+</container>
+<!-- // message -->

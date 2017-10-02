@@ -13,6 +13,19 @@
     border-top: 3px solid $link-color;
   }
 
+  &--message {
+    background: $light-gray !important;
+    border-color: #E9E9E9;
+  }
+
+  &--image-holder {
+    height: 180px;
+
+    TD {
+      vertical-align: middle;
+    }
+  }
+
   &__header .columns {
     padding: $post-padding;
     padding-bottom: 20px;
@@ -23,6 +36,16 @@
       border-bottom: 1px solid #DEE6E9;
     }
 
+  &__footer .columns {
+    padding: $post-padding;
+    padding-top: 20px;
+    }
+
+    &--message &__footer .columns {
+      padding-top: $post-padding;
+      border-top: 1px solid #DEE6E9;
+    }
+
   &__content .columns {
     padding: $post-padding;
     padding-top: 0;
@@ -30,6 +53,10 @@
 
     &--digest &__content .columns {
       padding-top: $post-padding
+    }
+
+    &--image-holder &__content .columns {
+      padding: $post-padding;
     }
 
   &__subject {
@@ -68,7 +95,14 @@
     border-radius: 4px;
   }
 
+  &__centered-image {
+    max-height: 100%;
+    width: auto;
+    margin: 0 auto;
+  }
+
   &__text {
+    margin: 0;
     line-height: 1.5;
     font-size: 14px;
     color: $text-color;
@@ -89,4 +123,13 @@
   &__buttons {
     margin: 25px 0 0;
   }
+
+  &__category {
+    margin-right: 20px;
+  }
+
+  &__category-name {
+    font-weight: bold;
+  }
+
 }

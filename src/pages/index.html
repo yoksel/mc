@@ -23,6 +23,16 @@ subject: Test page
       content="TMPL_VAR intro"
     }}
 
+    <h2 class="page__component-name">user</h2>
+    <!-- user -->
+    {{>
+      user
+      user_pic="https://img-fotki.yandex.ru/get/366459/5091629.a5/0_93a5a_b49d3852_S"
+      user_link="TMPL_VAR user_link"
+      user_name="TMPL_VAR user_name"
+      user_datetime="&bull; 12 сен 2016, 08:22"
+    }}
+
     <h2 class="page__component-name">post</h2>
     <!-- post -->
     {{>
@@ -96,6 +106,7 @@ subject: Test page
       image="https://img-fotki.yandex.ru/get/6616/5091629.79/0_6f337_1e9ac3a2_S"
     }}
 
+    <!-- TO DO -->
     <h2 class="page__component-name">section</h2>
     <!-- section -->
     <section class="section">
