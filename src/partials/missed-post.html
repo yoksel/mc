@@ -1,21 +1,24 @@
-<!-- journal-post -->
-<div class="post post--missed">
-    <div class="post__header">
-        <!-- user -->
-        {{>
-            user
-            mod="user--narrow"
-            user_pic="https://img-fotki.yandex.ru/get/366459/5091629.a5/0_93a5a_b49d3852_S"
-            user_link="TMPL_VAR user_link"
-            user_name="TMPL_VAR user_name"
-            user_datetime="12 сен 2016, 08:22"
-        }}
-    </div>
+<!-- missed-post -->
+<container class="post post--missed">
+    <row class="post__header">
+        <columns >
+            <!-- user -->
+            {{>
+                user
+                mod="user--narrow"
+                user_pic="https://img-fotki.yandex.ru/get/366459/5091629.a5/0_93a5a_b49d3852_S"
+                user_link="TMPL_VAR user_link"
+                user_name="TMPL_VAR user_name"
+                user_datetime="12 сен 2016, 08:22"
+            }}
+        </columns>
+    </row>
+    <row class="post__content">
+        <columns>
+            <h4 class="post__subject"><a href="{{{url}}}" class="post__subject-link">{{{subject}}}</a></h4>
 
-    <div class="post__content">
-        <h4 class="post__subject"><a href="{{{url}}}" class="post__subject-link">{{{subject}}}</a></h4>
-
-        <p class="post__text">{{{text}}}</p>
-    </div>
-  </div>
-  <!-- // digest-post -->
+            <p class="post__text">{{{text}}}</p>
+        </columns>
+    </row>
+</container>
+<!-- // missed-post -->

@@ -1,9 +1,8 @@
 .post {
   margin-bottom: 10px;
-  padding: 12px;
   border: 1px solid #DEE6E9;
   border-radius: 6px;
-  background: $white;
+  background: $white !important;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .06);
 
   &--digest {
@@ -14,20 +13,23 @@
     border-top: 3px solid $link-color;
   }
 
-  &__header {
-    margin-bottom: 20px;
-  }
-    &--digest &__header {
-      margin-bottom: 0;
-      padding: 12px;
+  &__header .columns {
+    padding: $post-padding;
+    padding-bottom: 20px;
+    }
+
+    &--digest &__header .columns {
+      padding-bottom: $post-padding;
       border-bottom: 1px solid #DEE6E9;
     }
 
-  &__content {
-    overflow: hidden;
-  }
-    &--digest &__content {
-      padding: 12px;
+  &__content .columns {
+    padding: $post-padding;
+    padding-top: 0;
+    }
+
+    &--digest &__content .columns {
+      padding-top: $post-padding
     }
 
   &__subject {
@@ -56,13 +58,14 @@
     }
 
   &__image-holder {
-    float: right;
-    width: 72px;
-    height: 72px;
-    margin: 0 0 0 12px;
+    width: 72px !important;
+    padding-left: 0 !important;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
     border-radius: 4px;
-    background-size: cover;
-    background-position: 50% 50%;
   }
 
   &__text {

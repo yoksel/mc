@@ -1,37 +1,39 @@
 <!-- post -->
-<div class="post">
-    <div class="post__header">
-        <!-- user -->
-        {{>
-            user
-            user_pic="https://img-fotki.yandex.ru/get/366459/5091629.a5/0_93a5a_b49d3852_S"
-            user_link="TMPL_VAR user_link"
-            user_name="TMPL_VAR user_name"
-            user_datetime="&bull; 12 сен 2016, 08:22"
-        }}
-    </div>
+<container class="post">
+    <row class="post__header">
+        <columns >
+            <!-- user -->
+            {{>
+                user
+                user_pic="https://img-fotki.yandex.ru/get/366459/5091629.a5/0_93a5a_b49d3852_S"
+                user_link="TMPL_VAR user_link"
+                user_name="TMPL_VAR user_name"
+                user_datetime="&bull; 12 сен 2016, 08:22"
+            }}
+        </columns>
+    </row>
+    <row class="post__content">
+        <columns>
+            <h4 class="post__subject"><a href="{{{url}}}" class="post__subject-link">{{{subject}}}</a></h4>
 
-    <div class="post__content">
-        <h4 class="post__subject"><a href="{{{url}}}" class="post__subject-link">{{{subject}}}</a></h4>
+            <p class="post__text">{{{text}}}</p>
 
-        <p class="post__text">{{{text}}}</p>
+            <p class="post__tags">
+                <a class="post__button button" href="{{{tag_url}}}">{{{tag_name}}}</a>
+                <a class="post__button button" href="{{{tag_url}}}">{{{tag_name}}}</a>
+                <a class="post__button button" href="{{{tag_url}}}">{{{tag_name}}}</a>
+                <a class="post__button button" href="{{{tag_url}}}">{{{tag_name}}}</a>
+            </p>
 
-        <p class="post__tags">
-            <a class="post__button button" href="{{{tag_url}}}">{{{tag_name}}}</a>
-            <a class="post__button button" href="{{{tag_url}}}">{{{tag_name}}}</a>
-            <a class="post__button button" href="{{{tag_url}}}">{{{tag_name}}}</a>
-            <a class="post__button button" href="{{{tag_url}}}">{{{tag_name}}}</a>
-        </p>
+            <p class="post__buttons">
+                <a class="post__button button button--has-image" href="{{{action_url}}}"><img src="https://img-fotki.yandex.ru/get/6616/5091629.79/0_6f337_1e9ac3a2_S" alt="" width="24" height="24">{{{action_approve}}}</a>
+                <a class="post__button button button--has-image" href="{{{action_url}}}"><img src="https://img-fotki.yandex.ru/get/6616/5091629.79/0_6f337_1e9ac3a2_S" alt="" width="24" height="24">{{{action_reject}}}</a>
+            </p>
 
-        <p class="post__buttons">
-            <a class="post__button button button--has-image" href="{{{action_url}}}"><img src="https://img-fotki.yandex.ru/get/6616/5091629.79/0_6f337_1e9ac3a2_S" alt="" width="24" height="24">{{{action_approve}}}</a>
-            <a class="post__button button button--has-image" href="{{{action_url}}}"><img src="https://img-fotki.yandex.ru/get/6616/5091629.79/0_6f337_1e9ac3a2_S" alt="" width="24" height="24">{{{action_reject}}}</a>
-        </p>
-
-        <p class="post__buttons">
-            <a class="post__button button button--blue" href="{{{action_url}}}">{{{action_approve}}}</a>
-        </p>
-
-    </div>
-  </div>
-  <!-- // digest-post -->
+            <p class="post__buttons">
+                <a class="post__button button button--blue" href="{{{action_url}}}">{{{action_approve}}}</a>
+            </p>
+        </columns>
+    </row>
+</container>
+<!-- // post -->

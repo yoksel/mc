@@ -1,13 +1,12 @@
 <!-- digest-post -->
-<div class="post post--digest">
-    <div class="post__header">
-        {{{header}}}
-    </div>
+<container class="post post--digest">
+    <row class="post__header">
+        <columns>{{{header}}}</columns>
+    </row>
 
-    <div class="post__content">
-        <div  class="post__image-holder" style="background-image: url({{{image}}})" alt=""></div>
-
-        <h4 class="post__subject"><a href="{{{url}}}" class="post__subject-link">{{{subject}}}</a></h4>
-    </div>
-  </div>
-  <!-- // digest-post -->
+    <row class="post__content">
+        <columns small="11" large="11"><h4 class="post__subject"><a href="{{{url}}}" class="post__subject-link">{{{subject}}}</a></h4></columns>
+        <columns small="1" large="1" class="post__image-holder"><img  class="post__image" src="{{{image}}}" alt=""></columns>
+    </row>
+</container>
+<!-- // digest-post -->
